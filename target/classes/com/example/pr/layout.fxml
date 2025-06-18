@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.pr.cl.DiagnosisController">
+    <children>
+        <Label text="ФИО пациента:" />
+        <TextField fx:id="patientNameField" layoutX="150.0" layoutY="10.0" />
+
+        <Label text="ФИО врача:" layoutY="40.0" />
+        <TextField fx:id="doctorNameField" layoutX="150.0" layoutY="40.0" />
+
+        <Label text="Название болезни:" layoutY="70.0" />
+        <TextField fx:id="diseaseNameField" layoutX="150.0" layoutY="70.0" />
+
+        <Label text="Название лечения:" layoutY="100.0" />
+        <TextField fx:id="treatmentNameField" layoutX="150.0" layoutY="100.0" />
+
+        <Label text="Дата постановки:" layoutY="130.0" />
+        <DatePicker fx:id="diagnosisDatePicker" layoutX="150.0" layoutY="130.0" />
+
+        <Button fx:id="addButton" text="Добавить диагноз" layoutX="150.0" layoutY="160.0" />
+
+        <Button fx:id="searchButton" text="Поиск по ФИО пациента" layoutX="300.0" layoutY="160.0" />
+
+        <ListView fx:id="resultsListView" layoutX="10.0" layoutY="200.0" prefHeight="200.0" prefWidth="580.0"/>
+
+        <Text text="Результаты поиска:" layoutX="10.0" layoutY="185.0"/>
+
+    </children>
+</AnchorPane>
